@@ -1,0 +1,47 @@
+/** BUTTONS DEFAULTS **/
+@mixin standard-button() {
+    position: relative;
+    background: transparent;
+    color: $black;
+    padding: $pad $pad*1.5;
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    float: left;
+    min-width: 8rem;
+    margin-bottom: $pad;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:not(:last-child) {
+        margin-right: $pad;
+    }
+
+    .shim {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover {
+        color: $gray;
+        transition: all ease 0.2s;
+    }
+}
+
+@mixin border-button() {
+    @include standard-button();
+    background: transparent;
+    color: $black;
+    border: 1px solid $black;
+    z-index: 1;
+
+    &:hover {
+        color: $white;
+        background: transparent;
+        transition: all ease 0.2s;
+    }
+}

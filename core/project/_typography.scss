@@ -1,0 +1,44 @@
+/** FONT MIXINS **/
+// short cuts for fonts and weights
+@font-face {
+    font-family: Montserrat;
+    src: url('../../../../fonts/Montserrat-Bold.ttf');
+    font-weight: 600;
+}
+
+/** TYPE PATTERNS **/
+@mixin quiet() {
+    font-size: 12px;
+    line-height: 1.4; // no units on line-height
+    letter-spacing: 0.75px;
+}
+
+@mixin standard() {
+    font-size: 14px; // please just use pxs.
+    line-height: 1.4; // no units on line-height
+    letter-spacing: 0.02em; // ems for letter-spacing 'kearning'
+    font-weight: 400; // no 'normal' and 'bold' - make sure your font supports this - or the browser will try and fake it - and it'll cause troubles for you
+}
+
+@mixin strong() {
+    font-size: 25px;
+    line-height: 1.4; // no units on line-height
+
+    @include bp(1) {
+        font-size: 30px;
+    }
+}
+
+@mixin loud() {
+    font-size: 35px;
+    line-height: 1.4; // no units on line-height
+
+    // smaller on iphone 5
+    @media (max-width: 374px) {
+        font-size: 30px;
+    }
+
+    @include bp(1) {
+        font-size: 60px;
+    }
+}

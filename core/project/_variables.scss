@@ -1,0 +1,24 @@
+/** COLORS **/
+
+// Standard
+$pure-black: #000;
+$pure-white: #fff;
+
+// Programatic Shades of Gray
+$gray: #bfbfbf;
+$gray-light: #f1f1f1;
+$gray-lighter: lighten($gray, 50%);
+$gray-dark: darken($gray, 10%);
+
+$overlay-black: rgba(0,0,0,0.5);
+$overlay-white: rgba(225,225,225,0.5);
+
+/** LAYOUT **/
+
+// Standard Padding
+$pad: 10px;
+// set based on project
+$v: $pad*2;
+$h: $pad*1;
+
+// Project Specific

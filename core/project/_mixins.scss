@@ -1,0 +1,58 @@
+/** LAYOUT MIXINS **/
+@mixin flexbox($d, $w, $j, $a) {
+    display: flex;
+    flex-direction: $d;
+    flex-wrap: $w;
+    justify-content: $j;
+    align-items: $a;
+}
+
+/** Positioning: z-index **/
+$bottom: -10;
+$back: -1;
+$base: 0;
+$middle: 1;
+$front: 2;
+$top: 10;
+
+$z-layers: (
+    'bottom': $bottom,
+    'back': $back,
+    'base': $base,
+    'middle': $middle,
+    'front': $front,
+    'top': $top,
+
+    'modal': (
+        'tooptip': 5002,
+        'content': 5001,
+        'overlay': 5000
+    ),
+
+    'admin-header': 6000
+);
+
+@function z($layer) {
+    @return map-get($z-layers, $layer);
+}
+
+/** USAGE
+ ** reference: https://www.sitepoint.com/better-solution-managing-z-index-sass/
+   z-index: z('top');
+   or
+   z-index: z('modal', 'content');
+**/
+
+// $hover animations - (check for hover - or don't add it)
+@mixin hover-setup() {
+    @media (hover: hover) {
+        @content;
+    }
+}
+@mixin on-hover() {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
