@@ -16,6 +16,9 @@ const spinner = ora('spinning');
 
 inquirer.registerPrompt('file-tree-selection', inquirerFileTreeSelection);
 
+// Allows us to call this function from outside of the library file.
+exports.run = run;
+
 // run setup program
 program
     .version('1.0.0', '-v, --version')
