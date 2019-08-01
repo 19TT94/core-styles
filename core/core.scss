@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,400');
+/* RESETS */
+@import "/resets/meyer";
+@import "/resets/custom";
 
-@import "browser-reset";
-@import "colors";
-@import "breakpoints";
-@import "variables";
-@import "settings";
-@import "elements";
+/* PROJECT SPECIFIC */
+@import "/project/variables";
+@import "/project/typography";
+@import "/project/breakpoints";
+@import "/project/mixins";
+@import "/project/buttons";
