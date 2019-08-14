@@ -10,11 +10,11 @@ Core styles is a group of resets, base styles, and mixins to add to an initial p
 
 `npm install -g core-styles`
 
-run `core-styles` from your project directory
+run `core-styles add` from your project directory
 
 * follow prompt to add core styles folder to your project
 
-* or run `core styles --current` to add the folder to your current directory
+* or run `core-styles add --current` to add the folder to your current directory
 
 ### Usage
 

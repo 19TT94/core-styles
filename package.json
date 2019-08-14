@@ -8,10 +8,15 @@
   },
   "author": "Taylor Tobin",
   "license": "ISC",
+  "bin": {
+    "addcore": "./bin/index.js"
+  },
+  "preferGlobal": true,
   "dependencies": {
     "commander": "^2.20.0",
     "figlet": "^1.2.3",
     "fs": "0.0.1-security",
+    "fs-extra": "^8.1.0",
     "inquirer": "^6.5.0",
     "inquirer-file-tree-selection-prompt": "^1.0.2",
     "ora": "^3.4.0",
