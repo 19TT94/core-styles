@@ -1,5 +1,5 @@
 {
-  "name": "core-styles",
+  "name": "@19TT94/core-styles",
   "version": "1.0.0",
   "description": "Core Styles for initial project setup.",
   "main": "index.js",
@@ -8,6 +8,10 @@
   },
   "author": "Taylor Tobin",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/19TT94/core-styles.git"
+  },
   "bin": {
     "addcore": "./bin/index.js"
   },
