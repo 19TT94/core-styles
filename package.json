@@ -1,5 +1,5 @@
 {
-  "name": "@19TT94/core-styles",
+  "name": "core-styles",
   "version": "1.0.0",
   "description": "Core Styles for initial project setup.",
   "main": "index.js",
