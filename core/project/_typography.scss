@@ -1,10 +1,5 @@
 /** FONT MIXINS **/
-// short cuts for fonts and weights
-@font-face {
-    font-family: Montserrat;
-    src: url('../../../../fonts/Montserrat-Bold.ttf');
-    font-weight: 600;
-}
+// add fonts here
 
 /** TYPE PATTERNS **/
 @mixin quiet() {
