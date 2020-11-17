@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/19TT94/core-styles.git"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bin": {
     "addcore": "./bin/index.js"
   },
