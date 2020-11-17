@@ -3,6 +3,7 @@
 Core styles is a group of resets, base styles, and mixins to add to an initial project build.
 
 ### Local Installation
+[Core Styles NPM Package](https://www.npmjs.com/package/core-styles/access)
 
 `npm install core-styles`
 
