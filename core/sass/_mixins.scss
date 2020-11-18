@@ -8,20 +8,20 @@
 }
 
 /** Positioning: z-index **/
-$bottom: -10;
-$back: -1;
+$root: -10;
+$below: -1;
 $base: 0;
-$middle: 1;
-$front: 2;
-$top: 10;
+$above: 1;
+$top: 2;
+$peak: 10;
 
 $z-layers: (
-    'bottom': $bottom,
-    'back': $back,
+    'root': $root,
+    'below': $below,
     'base': $base,
-    'middle': $middle,
-    'front': $front,
+    'above': $above,
     'top': $top,
+    'peak': $peak,
 
     'modal': (
         'tooptip': 5002,

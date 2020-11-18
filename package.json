@@ -3,18 +3,14 @@
   "version": "1.0.0",
   "description": "Core Styles for initial project setup.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Taylor Tobin",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/19TT94/core-styles.git"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bin": {
-    "addcore": "./bin/index.js"
+    "addcore": "bin/index.js"
   },
   "preferGlobal": true,
   "dependencies": {
