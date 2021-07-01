@@ -1,5 +1,5 @@
-export const breakpoints = {
-  widths: {
+export const breakpoint = {
+  width: {
     1: "480px",
     2: "640px",
     3: "767px",
@@ -9,14 +9,8 @@ export const breakpoints = {
   }
 };
 
-export const bp = (width) => {
-  return `@media (min-width: ${breakpoints.widths[width]})`;
-};
+export const bp = width => `@media (min-width: ${breakpoint.width[width]})`;
 
-export const customBp = (width) => {
-  return `@media (min-width: ${width})`;
-}
+export const customBp = width => `@media (min-width: ${width})`;
 
-export const minHeight = (height) => {
-  return `@media (min-height: ${height})`;
-}
+export const minHeight = height => `@media (min-height: ${height})`;
